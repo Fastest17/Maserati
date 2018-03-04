@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maserati</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"><img src="images/Header.png" alt="Фон"></div>
+        <div id="content">
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html" title="На головну"><img src="images/Logo.jpg" alt="Логотип"></a></li>
+                    <li><a href="Ghibli.html" title="Ghibli">Ghibli</a></li>
+                    <li><a href="Quattroporte.html" title="Quattroporte">Quattroporte</a></li>
+                    <li><a href="GranTurismo.html" title="GranTurismo">GranTurismo</a></li>
+                </ul>
+                <div id="map"><img src="images/Map.jpg" alt="Карта"></div>
+            </div>
+            <div id="main">
+                <table>
+                    <tr>
+                        <th id="main_title" colspan="3"><h1>Головна</h1></th>
+                    </tr>
+                    <tr>
+                        <td class="small_card">
+                            <img src="images/Ghibli.jpg" alt="Ghibli">
+                            <div class="content">
+                                <small>Бизнес клас</small>
+                                <h2>Ghibli</h2>
+                                <p>Maserati Ghibli III – седан бизнес-класу італійської компанії Maserati, який поступив в продажу у другій половині 2013</p>
+                                <a href="Ghibli.html" title="Ghibli">Перейти</a>
+                            </div>
+                        </td>
+                        <td class="small_card">
+                            <img src="images/Quatro.jpg" alt="Quattroporte">
+                            <div class="content">
+                                <small>Спортивний клас</small>
+                                <h2>Quattroporte</h2>
+                                <p>Maserati Quattroporte – спортианий повнорозмірний седан класу люкс, який виготовляється італійською компанією Maserati з 1963</p>
+                                <a href="Quattroporte.html" title="Quattroporte">Перейти</a>
+                            </div>
+                        </td>
+                        <td class="small_card">
+                            <img src="images/Grand.jpg" alt="GranTurismo">
+                            <div class="content">
+                                <small>Купе</small>
+                                <h2>GranTurismo</h2>
+                                <p>Maserati GranTurismo – автомобіль класу Гран Турізмо від італійської компанії Maserati. Був представлений в березні 2007 у Женеві</p>
+                                <a href="GranTurismo.html" title="GranTurismo">Перейти</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="big_card" colspan="3">
+                            <img src="images/Form.png" alt="Форма">
+                            <form action="/Home/Order" method="post">
+                                <fieldset>
+                                    <legend>Оформлення замовлення</legend>
+                                    <input type="text" name="Name" placeholder="Введіть ваше ім'я" required/><br>
+                                    <input type="tel" name="Tel" placeholder="xxx-xxx-xxxx" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                                    <select name="Car">
+                                        <option value="Ghibli">Ghibli</option>
+                                        <option value="Quattroporte">Quattroporte</option>
+                                        <option value="GranTurismo">GranTurismo</option>
+                                    </select><br>
+                                    <input type="submit">
+                                </fieldset>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="footer"><h2>Copyrite</h2></div>
+    </div>
+</body>
+</html>
