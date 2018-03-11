@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Maserati</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -24,12 +25,12 @@
                     <th id="main_title" colspan="3"><h1>Quattroporte</h1></th>
                 </tr>
                 <tr class="big_pic">
-                    <td colspan="3"><img src="images/Quattroporte.png" alt="Превю"></td>
+                    <td colspan="3"><img id="previw" src="images/Quattroporte.png" alt="Превю"></td>
                 </tr>
                 <tr class="small_pic">
-                    <td><img src="images/Quattroporte.png" alt="Перед"></td>
-                    <td><img src="images/Quattroporte-2.png" alt="Бік"></td>
-                    <td><img src="images/Quattroporte-3.jpg" alt="Салон" ></td>
+                    <td><img onclick="setImg(this.src)" src="images/Quattroporte.png" alt="Перед"></td>
+                    <td><img onclick="setImg(this.src)" src="images/Quattroporte-2.png" alt="Бік"></td>
+                    <td><img onclick="setImg(this.src)" src="images/Quattroporte-3.jpg" alt="Салон" ></td>
 
                 </tr>
             </table>
